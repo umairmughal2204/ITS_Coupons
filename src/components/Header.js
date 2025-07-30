@@ -1,12 +1,26 @@
+"use client";
 import { FaSearch } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io"; // Close icon
+import { useState } from "react";
 
 export default function Header() {
+  const [showAnnouncement, setShowAnnouncement] = useState(true);
+
   return (
     <header className="w-full">
       {/* Announcement Bar */}
-      <div className="bg-purple-800 text-white text-base text-center py-3">
-        🎉 Get the latest coupon updates daily – Save more, spend less!
-      </div>
+      {showAnnouncement && (
+        <div className="bg-purple-800 text-white text-base text-center py-3 relative px-6 md:px-16">
+          🎉 Get the latest coupon updates daily – Save more, spend less!
+          <button
+            onClick={() => setShowAnnouncement(false)}
+            className="absolute right-6 top-1/2 transform -translate-y-1/2 text-white text-xl hover:text-gray-300"
+            aria-label="Close announcement"
+          >
+            <IoMdClose />
+          </button>
+        </div>
+      )}
 
       {/* Main Header */}
       <div className="bg-white shadow-sm px-6 md:px-16 py-6 flex flex-col md:flex-row items-center justify-between">
