@@ -12,7 +12,6 @@ import FeaturedStores from "@/components/FeaturedStores";
 export default function Home() {
   return (
     <main>
-      <Header/>
       <HeroSlider/>
       <FeaturedStores/>
       <PromoCodesSection/>
@@ -21,7 +20,6 @@ export default function Home() {
       <BravoDealInfo/>
       <BlogSection />
       <Newsletter />
-      <Footer />
     </main>
   );
 }

@@ -31,11 +31,11 @@ export default function Header() {
 
         {/* Navigation Links */}
         <nav className="flex space-x-6 mt-4 md:mt-0 text-base font-medium text-gray-700">
-          <a href="#" className="hover:text-purple-700">Home</a>
-          <a href="#" className="hover:text-purple-700">Coupons</a>
-          <a href="#" className="hover:text-purple-700">Stores</a>
-          <a href="#" className="hover:text-purple-700">Categories</a>
-          <a href="#" className="hover:text-purple-700">About us</a>
+          <a href="/" className="hover:text-purple-700">Home</a>
+          <a href="/coupons" className="hover:text-purple-700">Coupons</a>
+          <a href="/stores" className="hover:text-purple-700">Stores</a>
+          <a href="/categories" className="hover:text-purple-700">Categories</a>
+          <a href="/aboutus" className="hover:text-purple-700">About us</a>
         </nav>
 
         {/* Search Box */}
