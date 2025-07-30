@@ -5,19 +5,21 @@ import BravoDealInfo from "@/components/BravoDealInfo";
 import StoresComponent from "@/components/StoresComponent";
 import TopDeals from "@/components/TopDeals";
 import PromoCodesSection from "@/components/PromoCodesSection";
-
-
+import Header from "@/components/Header";
+import HeroSlider from "@/components/HeroSlider";
+import FeaturedStores from "@/components/FeaturedStores";
 
 export default function Home() {
   return (
     <main>
+      <Header/>
+      <HeroSlider/>
+      <FeaturedStores/>
       <PromoCodesSection/>
       <TopDeals/>
       <StoresComponent/>
       <BravoDealInfo/>
       <BlogSection />
-      
-      {/* Newsletter and Footer components */}
       <Newsletter />
       <Footer />
     </main>
