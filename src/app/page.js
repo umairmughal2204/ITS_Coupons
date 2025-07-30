@@ -1,7 +1,13 @@
+import Newsletter from "@/components/Newsletter";
+import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
-    <div className="text-3xl font-bold text-blue-600 bg-amber-100">
-      Tailwind is working!
-    </div>
-  )
+    <main>
+      {/* Other content here */}
+
+      <Newsletter />
+      <Footer />
+    </main>
+  );
 }
